@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            background: white;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        select, input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background: #007BFF;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+            border: none;
+        }
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Scholarship Prediction Form</h2>
+    <form action="/predict" method="post">
+       
+        <label>Education Qualification:</label>
+        <select name="Education Qualification">
+            <option value="undergraduate">Undergraduate</option>
+            <option value="postgraduate">Postgraduate</option>
+        </select>
+
+        <label>Gender:</label>
+        <select name="Gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label>Community:</label>
+        <select name="Community">
+            <option value="general">General</option>
+            <option value="obc">OBC</option>
+            <option value="sc/st">SC/ST</option>
+            <option value="minority">Minority</option>
+        </select>
+
+        <label>Religion:</label>
+        <select name="Religion">
+            <option value="hindu">Hindu</option>
+            <option value="muslim">Muslim</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label>Ex-service-men:</label>
+        <select name="Exservice-men">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>Disability:</label>
+        <select name="Disability">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>Sports:</label>
+        <select name="Sports">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+
+        <label>Annual Percentage:</label>
+        <select name="Annual-Percentage">
+            <option value="90-100">90-100</option>
+            <option value="70-80">70-80</option>
+            <option value="60-70">60-70</option>
+        </select>
+
+        <label>Income:</label>
+        <select name="Income">
+            <option value="upto1.5l">Up to 1.5L</option>
+            <option value="1.5l to 3l">1.5L to 3L</option>
+            <option value="above 6l">Above 6L</option>
+        </select>
+
+        <label>India:</label>
+        <select name="India">
+            <option value="in">In</option>
+            <option value="out">Out</option>
+        </select>
+
+        <input type="submit" value="Predict">
+    </form>
+</div>
+
+</body>
+</html>
